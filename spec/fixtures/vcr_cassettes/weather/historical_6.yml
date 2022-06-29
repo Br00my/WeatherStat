@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dataservice.accuweather.com/currentconditions/v1/28143/historical?apikey=dmG0mtIfQ1p5Y5R3trDtwocydt0KON1d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - dataservice.accuweather.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Jun 2022 17:31:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2898'
+      Connection:
+      - keep-alive
+      Server:
+      - Microsoft-IIS/10.0
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '33'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=215
+      Expires:
+      - Tue, 28 Jun 2022 17:35:17 GMT
+      Akamai-Grn:
+      - 0.e54fde17.1656437502.2be3b8b6
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 2.135.65.22
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2022-06-28T22:58:00+06:00","EpochTime":1656435480,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":28.5,"Unit":"C","UnitType":17},"Imperial":{"Value":83.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us","Link":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us"},{"LocalObservationDateTime":"2022-06-28T21:57:00+06:00","EpochTime":1656431820,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":28.9,"Unit":"C","UnitType":17},"Imperial":{"Value":84.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us","Link":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us"},{"LocalObservationDateTime":"2022-06-28T20:57:00+06:00","EpochTime":1656428220,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":29.2,"Unit":"C","UnitType":17},"Imperial":{"Value":84.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us","Link":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us"},{"LocalObservationDateTime":"2022-06-28T19:57:00+06:00","EpochTime":1656424620,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":29.7,"Unit":"C","UnitType":17},"Imperial":{"Value":85.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us","Link":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us"},{"LocalObservationDateTime":"2022-06-28T18:57:00+06:00","EpochTime":1656421020,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":30.2,"Unit":"C","UnitType":17},"Imperial":{"Value":86.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us","Link":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us"},{"LocalObservationDateTime":"2022-06-28T17:57:00+06:00","EpochTime":1656417420,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":30.9,"Unit":"C","UnitType":17},"Imperial":{"Value":88.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us","Link":"http://www.accuweather.com/en/bd/dhaka/28143/current-weather/28143?lang=en-us"}]'
+  recorded_at: Tue, 28 Jun 2022 17:31:42 GMT
+recorded_with: VCR 6.1.0
