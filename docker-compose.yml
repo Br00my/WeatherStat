@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=postgres://postgres:mysecretpassword@postgres:5432/somedatabase
+
+  postgres:
+    image: postgres:latest
+    volumes:
+      - /root/postgresql:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+    ports:
+      - 5432:5432
