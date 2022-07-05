@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### ТЗ от компании EDSTEIN для кандидатов на позицию Junior Ruby on Rails Developer
 
-Things you may want to cover:
+API для статистики по погоде
+Как источник данных можно использовать https://developer.accuweather.com/apis.
+Город можно использовать любой (можно захардкодить).
 
-* Ruby version
+Необходимые эндпоинты:
 
-* System dependencies
+* /weather/current - Текущая температура
+* /weather/historical - Почасовая температура за последние 24 часа (https://developer.accuweather.com/accuweather-curr…)
+* /weather/historical/max - Максимальная темперетура за 24 часа
+* /weather/historical/min - Минимальная темперетура за 24 часа
+* /weather/historical/avg - Средняя темперетура за 24 часа
+* /weather/by_time - Найти температуру ближайшую к переданному timestamp (например 1621823790 должен отдать температуру за 2021-05-24 08:00. Из имеющихся данных, если такого времени нет вернуть 404)
+* /health - Статус бекенда (Можно всегда отвечать OK)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Должны быть интеграционные тесты на эндпоинты и юнит тесты на общие классы/модули.
+Рекомендуется хранить данные о температуре локально для снижения нагрузки на сторонний API.
